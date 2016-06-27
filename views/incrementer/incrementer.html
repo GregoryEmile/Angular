@@ -1,0 +1,29 @@
+<<<<<<< Updated upstream
+<button class="btn btn-primary" ng-click="increment()">
+    +
+</button>
+<input type="number" ng-readonly="true" ng-model="value"/>
+<button class="btn btn-primary" ng-click="decrement()">
+    -
+</button>
+<ul ng-repeat="val in history | orderBy: '-timestamp'">
+    <li>
+        <span class="label" ng-class="{'label-success': val.value > 0, 'label-danger': val.value <= 0}">
+            {{val.timestamp | date: 'short'}} :
+            {{val.value}}
+=======
+<p></p>
+<p><button type="button" class="btn btn-warning" ng-click="MoinsMoins()"> - </button>
+    <input type="number" ng-model="Val_Init" ng-readonly="true">
+    <button type="button" class="btn btn-primary" ng-click="PlusPlus()"> + </button></p>
+
+
+<ul ng-repeat = "value in history | orderBy: '-timestamp'">
+    <li>
+        <span class="label" ng-class="{'label-success':value.value>0, 'label-danger':value.value<=0}">
+        {{value.timestamp | date: 'short'}};
+        {{value}}
+>>>>>>> Stashed changes
+        </span>
+    </li>
+</ul>
